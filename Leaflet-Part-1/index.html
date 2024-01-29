@@ -8,8 +8,8 @@
   <title>Leaflet Step-1</title>
 
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="" />
 
   <!-- Our CSS -->
@@ -20,13 +20,53 @@
 
   <!-- The div that holds our map -->
   <div id="map"></div>
+  <!-- The div that holds my legend -->
+  <div id="legend">
+    <div class='my-legend'>
+      <div class='legend-scale'>
+        <ul class='legend-labels'>
+          <li><span style='background:#84fd6c;'></span>-10-10</li>
+          <li><span style='background:#bfd16e;'></span>10-30</li>
+          <li><span style='background:#ddbf5c;'></span>30-50</li>
+          <li><span style='background:#e79b37;'></span>50-70</li>
+          <li><span style='background:#ec7141;'></span>70-90</li>
+          <li><span style='background:#f82720'></span>90+</li>
+        </ul>
+      </div>
+      </div>
+      
+      <style type='text/css'>
+        .my-legend .legend-scale ul {
+          margin: 0;
+          padding: 0;
+          float: left;
+          list-style: none;
+          }
+        .my-legend .legend-scale ul li {
+          font-size: 70%;
+          list-style: none;
+          margin-left: 0;
+          line-height: 17px;
+          }
+        .my-legend ul.legend-labels li span {
+          display: block;
+          float: left;
+          height: 15px;
+          width: 15px;
+          margin-right: 4px;
+          margin-left: 0;
+          }
+      </style>
+  </div>
 
   <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
   <!-- D3 JavaScript -->
-  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- API key -->
+  <script type="text/javascript" src="static/js/config.js"></script>
   <!-- Our JavaScript -->
   <script type="text/javascript" src="static/js/logic.js"></script>
 </body>
