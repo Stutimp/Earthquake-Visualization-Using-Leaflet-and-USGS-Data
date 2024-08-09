@@ -8,6 +8,13 @@ This project involves building an interactive map to visualize earthquake data p
 - **Data Source:**
 The data is sourced from the USGS GeoJSON Feed, which is updated every 5 minutes. I used the link: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php to select a dataset to visualize. I chose the dataset "All Earthquakes from the Past 7 Days," available in JSON format.
 
+**The project is broken into 2 parts:
+- Leadlet Part-1 (explained below with link for deployment)
+- Leaflet Part-2 (work in progress) :)
+
+
+## Leaflet Part 1
+
 ### **Create the Earthquake Visualization**
 - **Data Import and Visualization:**
 
@@ -54,7 +61,10 @@ Overall, this script creates an interactive map that visualizes recent earthquak
 - Markers scale according to earthquake magnitude.
 - Colors change based on the depth of the earthquake.
 - Tooltips show the magnitude, location, and depth for each earthquake.
-- All data points load accurately at the correct locations.
+- All data points load accurately at the correct location
+
+# Deployment
+The link to deploy (leaflet part-1): file:///D:/Stuti_DataAnalytics/15%20Leaflet%20Challenge/Leaflet-challenge/Leaflet-Part-1/index.html
 
 Thank you !
 
